@@ -1,0 +1,80 @@
+.shoes{
+	.row{
+		margin-top: 20px;
+	}
+	margin-top: 30px;
+	&-title{
+		h1{
+			font-size: 24px !important;
+		}
+	}
+	.col-md-4{
+		margin-bottom: 30px;
+	}
+	.product-item{
+		p{
+			margin-bottom: 0;
+		}
+		.product-img{
+			display: inline-block;
+			overflow: hidden;
+			height: 320px;
+			img{
+				width: 100%;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		.product-card{
+			&-detail{
+				float: left;
+			}
+			&-price{
+				float: right;
+			}
+			&-detail-name,
+			&-price-detail{
+				color: $color-black;
+			}
+		}
+	}
+}
+.list-category{
+	a{
+		color: $color-black !important;
+	}
+	a:hover{
+		color: $color-gray !important;
+	}
+	li{
+		margin-bottom: 10px;
+	}
+	&-gender{
+		li{
+			display: block;
+			margin-bottom: 5px;
+		}
+		label{
+			color: $color-black !important;
+			margin-bottom: 0;
+			font-size: 16px;
+		}
+	}
+}
+#carouselExampleControls{
+	background-color: $color-slide;
+	height: 60px;
+	box-shadow: inset 0 -1px 0 0 $color-gray-light;
+	.carousel-inner{
+		height: 100%;
+		margin: 0 auto;
+    	width: 50%;
+	}
+	.carousel-item{
+		a{
+			color: $color-black !important;
+			border-bottom: 1px solid;
+		}
+	}
+}

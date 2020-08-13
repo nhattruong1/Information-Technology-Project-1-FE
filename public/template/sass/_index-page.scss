@@ -1,0 +1,330 @@
+.header-nav{
+	color: $color-gray;
+	z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+	right: 0;
+	background-color: $color-white;
+}
+
+.top-header-nav{
+	display: flex;
+	box-shadow: inset 0 -1px 0 0 $color-gray-light;
+	font-size: 12px;
+	&-left{
+		display: flex;
+		margin-right: auto;
+		a:hover{
+			color: $color-black !important;
+		}
+		svg{
+			transition: fill .35s ease;
+			fill: $color-gray;
+		}
+		svg:hover{
+			fill: $color-pink;
+		}
+	}
+	&-right{
+		display: flex;
+		margin-left: auto;
+		transition: color .35s ease;
+		i{
+			transition: color .35s ease;
+			font-size: 15px !important;
+			cursor: pointer;
+		}
+		i:hover{
+			color: $color-black;
+		}
+	}	
+}
+
+.header-nav-main{
+	display: flex;
+	padding: 0 20px;
+	box-shadow: inset 0 -1px 0 0 $color-gray-light;
+	display: flex;                  
+	flex-direction: row;           
+	flex-wrap: nowrap;              
+	justify-content: space-between; 
+	ul{
+		display: flex;
+		li{
+			padding: 24px 20px;
+			color: $color-black;
+			font-weight: 400;
+			font-family: $font-title;
+			font-size: 16px;
+			cursor: pointer;
+			a{
+				color: black !important;
+			}
+		}
+	}
+	&-logo{
+		width: 246px;
+		padding: 24px 0;
+		img{
+			width: 20%;
+		}
+	}
+	&-search{
+		color: $color-black;
+		width: 246px;
+		.search-box{
+			padding: 5px 0 5px 10px;
+			border: 1px solid $color-gray-light;
+			border-radius: 3px;
+			width: 200px;
+			transition: width .4s ease;
+			display: flex;
+			input{
+				margin-left: 5px;
+				border: 0;
+				width: 100%;
+			}
+			input:focus {
+				outline: none;
+			}
+		}
+		.search-box:focus-within{
+			width: 100%;
+			border: 1px solid $color-black;
+		}
+	}
+}
+
+.body{
+	margin-top: 110px;
+	.banner-card{
+		margin-top: 30px;
+		text-align: center;
+		p{
+			margin-bottom: 0;
+			font-size: 16px;
+			color: $color-black;
+		}
+		&-title{
+			font-family: $font-bold-title;
+			font-size: 72px !important;
+			letter-spacing: 0px;
+			height: 90px;
+		}
+		.list-button{
+			margin-top: 20px;
+			input{
+				border: 0;
+				color: $color-white;
+				background-color: $color-black;
+				padding: 8px 30px;
+				border-radius: 40px;
+			}
+		}
+	}
+	.sustainable-materials{
+		&-title{
+			font-weight: 500;
+			font-size: 24px;
+			color: $color-black;
+		}
+		&-products{
+			overflow: auto;
+			white-space: nowrap;
+		}
+		&-product{
+			display: inline-block;
+			width: 400px;
+			height: 467px;
+			margin-right: 15px;
+		}
+		img{
+			width: 100%;
+		}
+		&-product-info{
+			margin-top: 10px;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			p{
+				margin-bottom: 0;
+			}
+			.name-product,.cost-product{
+				color: $color-black;
+			}
+		}
+	}
+	.trending{
+		margin-top: 40px;
+		&-title{
+			font-weight: 500;
+			font-size: 24px;
+			color: $color-black;
+		}
+		&-banner-left{
+			background: url('/template/img/banner/nike-just-do-it\ \(1\).jpg');
+			background-position: center; 
+			height: 700px;
+			&-detail{
+				position: absolute;
+				left: 40px;
+				bottom: 20px;
+			}
+			&-detail-title{
+				font-size: 20px;
+				color: $color-white;
+			}
+			input{
+				border: 0;
+				background-color: $color-white;
+				border-radius: 30px;
+				margin-right: 10px;
+			}
+		}
+		&-banner-right{
+			background-image: url('/template/img/banner/banner_right.gif');
+			background-position: center; 
+			height: 700px;
+			background-size:cover;
+			&-detail{
+				position: absolute;
+				left: 40px;
+				bottom: 20px;
+			}
+			&-detail-title{
+				font-size: 20px;
+				color: $color-pink-light;
+			}
+			input{
+				border: 0;
+				color: $color-white;
+				background-color: $color-pink-light;
+				border-radius: 30px;
+				margin-right: 10px;
+			}
+			
+		}
+	}
+	.featured{
+		margin: 40px auto;
+		&-title{
+			font-weight: 500;
+			font-size: 24px;
+			color: $color-black;
+		}
+		&-banner{
+			background: url('/template/img/banner/nike-just-do-it\ \(2\).jpg');
+			background-position: center; 
+			background-size: cover;
+			height: 500px;
+			position: relative;
+			&-detail{
+				position: absolute;
+				left: 40px;
+				bottom: 20px;
+				&-title{
+					font-family: $font-bold-title;
+					font-size: 72px !important;
+					letter-spacing: 0px;
+					width: 500px;
+					line-height: 70px;
+					color: $color-white;
+				}
+				&-button{
+					input{
+						border: 1px solid $color-black;
+						background-color: $color-white;
+						border-radius: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer{
+	background-color: $color-black-light;
+	padding-top: 40px;
+	p{
+		margin: 0;
+		color: $color-gray;
+		font-size: 11px;
+		text-align: center ;
+	}
+	hr{
+		background-color: $color-gray;
+		opacity: 50%;
+	}
+	a{
+		font-size: 13px;
+	}
+	a:hover{
+		color: $color-white !important;
+	}
+	li{
+		margin-bottom: 3px;
+	}
+	&-top-icon{
+		float: right;
+		a{
+			margin-left: 20px;
+		}
+	}
+}
+.ct{
+	display: flex;
+    align-items: center;
+}
+.ct-l{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end
+}
+.pd-l{
+	padding: 8px 28px 8px 28px;
+
+}
+.bd{
+	box-shadow: inset -1px 0 0 0 #e5e5e5;
+}
+.pd-r{
+	padding: 10px 18px 10px 18px;
+}
+.r-hover:hover{
+	color: $color-black !important;
+	box-shadow: inset 0 -2px 0 0 $color-black;
+}
+.sustainable-materials-products::-webkit-scrollbar-track
+{
+	border-radius: 10px !important;
+	background-color: $color-gray-light;
+}
+
+.sustainable-materials-products::-webkit-scrollbar
+{
+	height:  4px;
+	cursor:pointer;
+	background-color: $color-gray-light;
+	border-radius: 10px;
+}
+
+.sustainable-materials-products::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: $color-gray;
+}
+
+.title-footer{
+	color: $color-white !important;
+	font-family: $font-title;
+	font-size: 15px !important;
+}
+.social-link-icon{
+	fill: $color-gray;
+    transition: fill .2s;
+}
+.social-link-icon:hover{
+	fill: $color-white;
+
+}
