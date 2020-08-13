@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 
 export default class Header extends Component {
   render() {
@@ -31,7 +32,7 @@ export default class Header extends Component {
                 Help
               </a>
               <div className="pd-r ct">
-                <a href="/Cart"><i className="fas fa-shopping-cart" /></a>
+                <Link to={`/Cart`}><i className="fas fa-shopping-cart" /></Link>
               </div>
               <div className="pd-r ct" style={{ display: "flex" }}>
                 {" "}
@@ -42,15 +43,15 @@ export default class Header extends Component {
           </section>
           <section className="header-nav-main">
             <div className="header-nav-main-logo">
-              <a href="/">
+              <Link to="/">
                 {" "}
                 <img src="/template/img/banner/logo.png" alt="" />{" "}
-              </a>
+              </Link>
             </div>
             <div className="header-nav-main-menu">
               <ul>
-                <li className="r-hover"><a href="/Products" style={{all: 'unset'}}>MEN</a></li>
-                <li className="r-hover"><a href="/Products" style={{all: 'unset'}}>WOMAN</a></li>
+                <li className="r-hover"><Link to="/Products" style={{all: 'unset'}}>MEN</Link></li>
+                <li className="r-hover"><Link to="/Products" style={{all: 'unset'}}>WOMAN</Link></li>
                 <li className="r-hover">KIDS</li>
                 <li className="r-hover">CUSTOMISE</li>
                 <li className="r-hover">SNKRS LAUNCH CALENDAR</li>
