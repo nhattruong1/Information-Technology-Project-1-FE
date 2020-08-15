@@ -5,7 +5,7 @@ class Cart_body extends Component {
         return (
             <div>
                 <section className="body">
-                    <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleControls" className="carousel slide" data-ride="carousel" style={{zIndex: -1}}>
                         <div className="carousel-inner ct">
                             <div className="carousel-item active">
                                 <span style={{textAlign: 'center', display: 'block', fontSize: '16px'}}>FREE DELIVERY TO YOU</span>

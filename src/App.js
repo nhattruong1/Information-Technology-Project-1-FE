@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./routes/Home";
 import Cart from "./routes/Cart";
+import List_Product from "./routes/List_product";
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,7 +20,7 @@ function App() {
             <Cart />
           </Route>
           <Route path="/Products">
-            <Products />
+            <List_Product />
           </Route>
           <Route path="/">
             <Home />
@@ -37,7 +38,6 @@ function Products() {
   return (
     <div>
       <h2>Topics</h2>
-
       <ul>
         <li>
           <Link to={`${match.url}/components`}>Components</Link>
