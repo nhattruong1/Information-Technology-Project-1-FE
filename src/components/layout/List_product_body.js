@@ -3,7 +3,55 @@ import {useRouteMatch} from "react-router-dom";
 
 
 class ListProduct extends Component {
+    constructor() {
+        super();
+        this.state = { items: [
+                {
+                    id:"1",
+                    image:"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/744d572a-1bf7-47dc-a988-c79e18b185a3/air-jordan-5-retro-shoe-x5LP1L.jpg",
+                    name:"Air Jordan 5 Retro",
+                    category:"Men Shoes",
+                    price:5589000
+                },{
+                    id:"2",
+                    image:"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/0fd92b55-e68c-47c7-852b-2ae96fbf6d77/zoom-freak-2-naija-basketball-shoe-38bV3Q.jpg",
+                    name:"Zoom Freak 2 Naija",
+                    category:"Men Shoes",
+                    price: 3519000
+                },
+                {
+                    id:"3",
+                    image:"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/d0d450f5-89ca-46ee-8f6d-247117cfef4a/jordan-why-not-zer03-basketball-shoe-9Jk64X.jpg",
+                    name:"Jordan 'Why Not?' Zer0.3",
+                    category:"Men Shoes",
+                    price:3829000
+                },
+                {
+                    id:"4",
+                    image:"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/2f26e888-8d5b-4cb3-98cd-ea4dc121a77b/phantom-gt-elite-fg-football-boot-rXskN1.jpg",
+                    name:"Nike Phantom GT Elite FG",
+                    category:"Football Boot",
+                    price:7319000
+                },
+                {
+                    id:"5",
+                    image:"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/f6a93b30-9802-40ee-91f9-c0f7b3a007b6/kybrid-s2-ep-basketball-shoe-Z2hhdJ.jpg",
+                    name:"Kybrid S2 EP",
+                    category:"Basketball Shoe",
+                    price:3829000
+                },
+                {
+                    id:"5",
+                    image:"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/0ebd23fb-1a1d-4309-a6d0-c1d710d70b75/react-presto-shoe-NWb44L.jpg",
+                    name:"Nike React Presto Premium",
+                    category:"Basketball Shoe",
+                    price:3829000
+                },
+        ]}
+    }
     render() {
+        let items = this.state.items;
+        console.log(items)
         return (
             <div>
                 <section className="body">
@@ -55,15 +103,15 @@ class ListProduct extends Component {
                                         </div>
                                         <ul>
                                             <li>
-                                                <input type="checkbox" name id="men-label" />
+                                                <input type="checkbox" id="men-label" />
                                                 <label htmlFor="men-label">Men</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name id="women-label" />
+                                                <input type="checkbox" id="women-label" />
                                                 <label htmlFor="women-label">Women</label>
                                             </li>
                                             <li>
-                                                <input type="checkbox" name id="unisex-label" />
+                                                <input type="checkbox" id="unisex-label" />
                                                 <label htmlFor="unisex-label">Unisex</label>
                                             </li>
                                         </ul>
@@ -73,102 +121,14 @@ class ListProduct extends Component {
                             <div className="col-md-10">
                                 <div className="shoes-list-product">
                                     <div className="row">
-                                        <div className="col-md-4">
-                                            <a href="#" className="product-item">
-                                                <div className="product-img">
-                                                    <img src="/template/img/product/zoom-freak-2.jpg" alt />
-                                                </div>
-                                                <div className="product-card">
-                                                    <div className="product-card-detail">
-                                                        <p className="product-card-detail-name">Zoom Freak 2</p>
-                                                        <p className="product-card-detail-cate">Basketball Shoe</p>
-                                                    </div>
-                                                    <div className="product-card-price">
-                                                        <p className="product-card-price-detail">3,519,000₫</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <a href="#" className="product-item">
-                                                <div className="product-img">
-                                                    <img src="/template/img/product/zoom-freak-2.jpg" alt />
-                                                </div>
-                                                <div className="product-card">
-                                                    <div className="product-card-detail">
-                                                        <p className="product-card-detail-name">Zoom Freak 2</p>
-                                                        <p className="product-card-detail-cate">Basketball Shoe</p>
-                                                    </div>
-                                                    <div className="product-card-price">
-                                                        <p className="product-card-price-detail">3,519,000₫</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <a href="#" className="product-item">
-                                                <div className="product-img">
-                                                    <img src="/template/img/product/zoom-freak-2.jpg" alt />
-                                                </div>
-                                                <div className="product-card">
-                                                    <div className="product-card-detail">
-                                                        <p className="product-card-detail-name">Zoom Freak 2</p>
-                                                        <p className="product-card-detail-cate">Basketball Shoe</p>
-                                                    </div>
-                                                    <div className="product-card-price">
-                                                        <p className="product-card-price-detail">3,519,000₫</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <a href="#" className="product-item">
-                                                <div className="product-img">
-                                                    <img src="/template/img/product/zoom-freak-2.jpg" alt />
-                                                </div>
-                                                <div className="product-card">
-                                                    <div className="product-card-detail">
-                                                        <p className="product-card-detail-name">Zoom Freak 2</p>
-                                                        <p className="product-card-detail-cate">Basketball Shoe</p>
-                                                    </div>
-                                                    <div className="product-card-price">
-                                                        <p className="product-card-price-detail">3,519,000₫</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <a href="#" className="product-item">
-                                                <div className="product-img">
-                                                    <img src="/template/img/product/zoom-freak-2.jpg" alt />
-                                                </div>
-                                                <div className="product-card">
-                                                    <div className="product-card-detail">
-                                                        <p className="product-card-detail-name">Zoom Freak 2</p>
-                                                        <p className="product-card-detail-cate">Basketball Shoe</p>
-                                                    </div>
-                                                    <div className="product-card-price">
-                                                        <p className="product-card-price-detail">3,519,000₫</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <a href="#" className="product-item">
-                                                <div className="product-img">
-                                                    <img src="/template/img/product/zoom-freak-2.jpg" alt />
-                                                </div>
-                                                <div className="product-card">
-                                                    <div className="product-card-detail">
-                                                        <p className="product-card-detail-name">Zoom Freak 2</p>
-                                                        <p className="product-card-detail-cate">Basketball Shoe</p>
-                                                    </div>
-                                                    <div className="product-card-price">
-                                                        <p className="product-card-price-detail">3,519,000₫</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        {items.map( item =>
+                                            <Product key={item.id}
+                                                     name={item.name}
+                                                     img={item.image}
+                                                     cate={item.category}
+                                                     price={item.price}
+                                            />)
+                                        }
                                     </div>
                                 </div>
                             </div>
@@ -180,4 +140,24 @@ class ListProduct extends Component {
     }
 }
 
+function Product(props) {
+    return(
+        <div className="col-md-4">
+            <a href="#" className="product-item">
+                <div className="product-img">
+                    <img src={props.img}/>
+                </div>
+                <div className="product-card">
+                    <div className="product-card-detail">
+                        <p className="product-card-detail-name">{props.name}</p>
+                        <p className="product-card-detail-cate">{props.cate}</p>
+                    </div>
+                    <div className="product-card-price">
+                        <p className="product-card-price-detail">{props.price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'})}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    );
+}
 export default ListProduct;

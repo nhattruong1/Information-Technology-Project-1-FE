@@ -357,12 +357,14 @@ p {
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
-  .shoes .product-item .product-card-detail {
-    float: left; }
-  .shoes .product-item .product-card-price {
-    float: right; }
-  .shoes .product-item .product-card-detail-name, .shoes .product-item .product-card-price-detail {
-    color: #000000; }
+  .shoes .product-item .product-card {
+    margin-top: 10px; }
+    .shoes .product-item .product-card-detail {
+      float: left; }
+    .shoes .product-item .product-card-price {
+      float: right; }
+    .shoes .product-item .product-card-detail-name, .shoes .product-item .product-card-price-detail {
+      color: #000000; }
 
 .list-category a {
   color: #000000 !important; }
