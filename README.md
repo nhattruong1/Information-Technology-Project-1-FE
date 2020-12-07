@@ -1,6 +1,6 @@
 # Adidas clone v0.1
 
-E-Commerce website template - Vuetify
+E-Commerce website template
 
 ## Demo
 
